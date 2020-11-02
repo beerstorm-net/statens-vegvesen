@@ -1,7 +1,7 @@
 name: flutter_vegvesen
 description: Flutter/Dart package til å hente kjøretøyopplysninger fra Statens Vegvesen
-version: 1.0.0
-author: beerstorm
+version: 1.0.1
+#author: beerstorm
 homepage: https://github.com/beerstorm-net/statens-vegvesen
 
 environment:

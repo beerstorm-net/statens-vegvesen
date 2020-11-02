@@ -1,14 +1,23 @@
 # flutter_vegvesen
 
-A new Flutter package project.
+FLutter package til å hente kjøretøy opplysninger fra Vegvesen API.  
 
-## Getting Started
+## Example  
+```
+final vegvesen = Vegvesen(bilskilt: 'EB65943');
+Kjoretoy kjoretoy = await vegvesen.hentKjoretoy();
+print('kjoretoy: $kjoretoy');
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+// sjekke hvis det er ELBIL  
+vegvesen.elbil();
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Install  
+```
+dependencies:  
+    flutter_gravatar: any
+```  
+
+## Support  
+You can file issues at https://github.com/beerstorm-net/statens-vegvesen/issues  
+Pull requests are welcome.  
