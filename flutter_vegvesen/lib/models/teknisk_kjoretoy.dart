@@ -46,10 +46,11 @@ class TekniskKjoretoy {
         hybridElektriskKjoretoy = map["hybridElektriskKjoretoy"],
         girkasse = map["girkasse"],
         hybridkategori = map["hybridkategori"],
-        motorer = List<Motorer>.from(map["motorer"].map((it) => Motorer.fromJsonMap(it))),
+        motorer = List<Motorer>.from(
+            map["motorer"].map((it) => Motorer.fromJsonMap(it))),
         karosseri = Karosseri.fromJsonMap(map["karosseri"]),
-        forbrukOgUtslipp =
-            List<ForbrukOgUtslipp>.from(map["forbrukOgUtslipp"].map((it) => ForbrukOgUtslipp.fromJsonMap(it))),
+        forbrukOgUtslipp = List<ForbrukOgUtslipp>.from(map["forbrukOgUtslipp"]
+            .map((it) => ForbrukOgUtslipp.fromJsonMap(it))),
         aksler = Aksler.fromJsonMap(map["aksler"]),
         unntak = map["unntak"];
 
@@ -67,14 +68,18 @@ class TekniskKjoretoy {
     data['lengde'] = lengde;
     data['bredde'] = bredde;
     data['hoyde'] = hoyde;
-    data['lastegenskaper'] = lastegenskaper == null ? null : lastegenskaper.toJson();
+    data['lastegenskaper'] =
+        lastegenskaper == null ? null : lastegenskaper.toJson();
     data['maksimumHastighet'] = maksimumHastighet;
     data['hybridElektriskKjoretoy'] = hybridElektriskKjoretoy;
     data['girkasse'] = girkasse;
     data['hybridkategori'] = hybridkategori;
-    data['motorer'] = motorer != null ? this.motorer.map((v) => v.toJson()).toList() : null;
+    data['motorer'] =
+        motorer != null ? this.motorer.map((v) => v.toJson()).toList() : null;
     data['karosseri'] = karosseri == null ? null : karosseri.toJson();
-    data['forbrukOgUtslipp'] = forbrukOgUtslipp != null ? this.forbrukOgUtslipp.map((v) => v.toJson()).toList() : null;
+    data['forbrukOgUtslipp'] = forbrukOgUtslipp != null
+        ? this.forbrukOgUtslipp.map((v) => v.toJson()).toList()
+        : null;
     data['aksler'] = aksler == null ? null : aksler.toJson();
     data['unntak'] = unntak;
     return data;

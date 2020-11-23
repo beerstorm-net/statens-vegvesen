@@ -18,7 +18,8 @@ class Kjoretoy {
         kuid = map["kuid"],
         personligKjennemerke = map["personligKjennemerke"],
         registrering = Registrering.fromJsonMap(map["registrering"]),
-        periodiskKjoretoykontroll = PeriodiskKjoretoykontroll.fromJsonMap(map["periodiskKjoretoykontroll"]),
+        periodiskKjoretoykontroll = PeriodiskKjoretoykontroll.fromJsonMap(
+            map["periodiskKjoretoykontroll"]),
         tekniskKjoretoy = TekniskKjoretoy.fromJsonMap(map["tekniskKjoretoy"]),
         bruktimport = map["bruktimport"];
 
@@ -29,8 +30,11 @@ class Kjoretoy {
     data['kuid'] = kuid;
     data['personligKjennemerke'] = personligKjennemerke;
     data['registrering'] = registrering == null ? null : registrering.toJson();
-    data['periodiskKjoretoykontroll'] = periodiskKjoretoykontroll == null ? null : periodiskKjoretoykontroll.toJson();
-    data['tekniskKjoretoy'] = tekniskKjoretoy == null ? null : tekniskKjoretoy.toJson();
+    data['periodiskKjoretoykontroll'] = periodiskKjoretoykontroll == null
+        ? null
+        : periodiskKjoretoykontroll.toJson();
+    data['tekniskKjoretoy'] =
+        tekniskKjoretoy == null ? null : tekniskKjoretoy.toJson();
     data['bruktimport'] = bruktimport;
     return data;
   }

@@ -1,3 +1,7 @@
+## [1.0.2] - formatting
+
+* formatting and cleanup
+
 ## [1.0.1] - Updates
 
 * Update README and LICENSE

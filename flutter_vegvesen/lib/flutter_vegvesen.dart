@@ -32,7 +32,9 @@ class Vegvesen {
       throw Exception("bilskilt kan ikke være null! du må sette inn!");
     }
 
-    if (_kjoretoy != null && (_kjoretoy.kjennemerke == _bilskilt || _kjoretoy.personligKjennemerke == _bilskilt)) {
+    if (_kjoretoy != null &&
+        (_kjoretoy.kjennemerke == _bilskilt ||
+            _kjoretoy.personligKjennemerke == _bilskilt)) {
       print('kjoretoy allerede lastet, retur igjen');
       return _kjoretoy;
     }
@@ -68,7 +70,8 @@ class Vegvesen {
     if (_kjoretoy.tekniskKjoretoy != null &&
         _kjoretoy.tekniskKjoretoy.motorer != null &&
         _kjoretoy.tekniskKjoretoy.motorer.isNotEmpty) {
-      List<Drivstoff> drivstoffList = _kjoretoy.tekniskKjoretoy.motorer.first.drivstoff;
+      List<Drivstoff> drivstoffList =
+          _kjoretoy.tekniskKjoretoy.motorer.first.drivstoff;
       if (drivstoffList.isNotEmpty) {
         drivstoffList.forEach((drivstoff) {
           if (drivstoff.drivstofftype.toLowerCase() == "elektrisk") {
