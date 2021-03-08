@@ -1,3 +1,9 @@
+## [1.1.0] - Null Safety
+
+* Null Safety
+* Flutter2 
+
+
 ## [1.0.2] - formatting
 
 * formatting and cleanup

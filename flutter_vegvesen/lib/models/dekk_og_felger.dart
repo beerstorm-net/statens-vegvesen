@@ -1,10 +1,10 @@
 class DekkOgFelger {
-  int akselId;
-  String belastningskode;
-  String hastighetskode;
-  String innpress;
-  String dekkdimensjon;
-  String felgdimensjon;
+  int? akselId;
+  String? belastningskode;
+  String? hastighetskode;
+  String? innpress;
+  String? dekkdimensjon;
+  String? felgdimensjon;
 
   DekkOgFelger.fromJsonMap(Map<String, dynamic> map)
       : akselId = map["akselId"],

@@ -1,14 +1,14 @@
 import 'nox_utslipp.dart';
 
 class ForbrukOgUtslipp {
-  String drivstoffkode;
-  String malemetode;
-  Object forbrukBlandetKjoring;
+  String? drivstoffkode;
+  String? malemetode;
+  Object? forbrukBlandetKjoring;
   NoxUtslipp noxUtslipp;
-  Object rekkeviddeKm;
-  Object elEnergiForbruk;
-  Object partikkelfilterFabrikkmontert;
-  Object co2Utslipp;
+  Object? rekkeviddeKm;
+  Object? elEnergiForbruk;
+  Object? partikkelfilterFabrikkmontert;
+  Object? co2Utslipp;
 
   ForbrukOgUtslipp.fromJsonMap(Map<String, dynamic> map)
       : drivstoffkode = map["drivstoffkode"],

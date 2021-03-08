@@ -1,9 +1,9 @@
 class Aksler {
-  int akselId;
-  bool drivaksel;
-  Object luftfjaering;
-  int tillattLast;
-  Object avstandtilNesteAksel;
+  int? akselId;
+  bool? drivaksel;
+  Object? luftfjaering;
+  int? tillattLast;
+  Object? avstandtilNesteAksel;
 
   Aksler.fromJsonMap(Map<String, dynamic> map)
       : akselId = map["akselId"],

@@ -3,14 +3,14 @@ import 'registrering.dart';
 import 'teknisk_kjoretoy.dart';
 
 class Kjoretoy {
-  String kjennemerke;
-  String understellsnummer;
-  String kuid;
-  String personligKjennemerke;
+  String? kjennemerke;
+  String? understellsnummer;
+  String? kuid;
+  String? personligKjennemerke;
   Registrering registrering;
   PeriodiskKjoretoykontroll periodiskKjoretoykontroll;
   TekniskKjoretoy tekniskKjoretoy;
-  Object bruktimport;
+  Object? bruktimport;
 
   Kjoretoy.fromJsonMap(Map<String, dynamic> map)
       : kjennemerke = map["kjennemerke"],

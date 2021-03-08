@@ -1,11 +1,11 @@
 class Registrering {
-  String registreringsstatus;
-  String registreringsstatusDato;
-  String forstegangsregistrering;
-  String forstegangsregistreringNorge;
-  String forstegangsregistreringEier;
-  bool avregistrertHosBilforhandler;
-  String kjennemerkefarge;
+  String? registreringsstatus;
+  String? registreringsstatusDato;
+  String? forstegangsregistrering;
+  String? forstegangsregistreringNorge;
+  String? forstegangsregistreringEier;
+  bool? avregistrertHosBilforhandler;
+  String? kjennemerkefarge;
 
   Registrering.fromJsonMap(Map<String, dynamic> map)
       : registreringsstatus = map["registreringsstatus"],

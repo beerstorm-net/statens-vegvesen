@@ -1,12 +1,12 @@
 class Lastegenskaper {
-  int egenvekt;
-  int tillattTotalvekt;
-  int nyttelast;
-  int tillattTilhengervektMedBrems;
-  int tillattTilhengervektUtenBrems;
-  int tillattVertikalKoplingslast;
-  int tillattVogntogvekt;
-  Object tillattTaklast;
+  int? egenvekt;
+  int? tillattTotalvekt;
+  int? nyttelast;
+  int? tillattTilhengervektMedBrems;
+  int? tillattTilhengervektUtenBrems;
+  int? tillattVertikalKoplingslast;
+  int? tillattVogntogvekt;
+  Object? tillattTaklast;
 
   Lastegenskaper.fromJsonMap(Map<String, dynamic> map)
       : egenvekt = map["egenvekt"],

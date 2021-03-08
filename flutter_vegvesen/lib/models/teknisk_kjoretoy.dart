@@ -5,28 +5,28 @@ import 'lastegenskaper.dart';
 import 'motorer.dart';
 
 class TekniskKjoretoy {
-  String handelsbetegnelse;
-  String typebetegnelse;
-  String merke;
-  String kjoretoyAvgiftskode;
-  String tekniskKode;
-  Object miljoEuroklasse;
-  int sitteplasser;
-  Object staplasser;
-  bool oppbygd;
-  int lengde;
-  int bredde;
-  int hoyde;
+  String? handelsbetegnelse;
+  String? typebetegnelse;
+  String? merke;
+  String? kjoretoyAvgiftskode;
+  String? tekniskKode;
+  Object? miljoEuroklasse;
+  int? sitteplasser;
+  Object? staplasser;
+  bool? oppbygd;
+  int? lengde;
+  int? bredde;
+  int? hoyde;
   Lastegenskaper lastegenskaper;
-  int maksimumHastighet;
-  bool hybridElektriskKjoretoy;
-  String girkasse;
-  String hybridkategori;
+  int? maksimumHastighet;
+  bool? hybridElektriskKjoretoy;
+  String? girkasse;
+  String? hybridkategori;
   List<Motorer> motorer;
   Karosseri karosseri;
   List<ForbrukOgUtslipp> forbrukOgUtslipp;
   Aksler aksler;
-  List<Object> unntak;
+  List<Object>? unntak;
 
   TekniskKjoretoy.fromJsonMap(Map<String, dynamic> map)
       : handelsbetegnelse = map["handelsbetegnelse"],

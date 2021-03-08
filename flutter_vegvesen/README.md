@@ -1,6 +1,6 @@
 # flutter_vegvesen
 
-FLutter package til å hente kjøretøy opplysninger fra Vegvesen API.  
+Flutter package til å hente kjøretøy opplysninger fra Vegvesen API.  
 
 ## Example  
 ```

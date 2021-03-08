@@ -1,6 +1,6 @@
 class Karosseri {
-  String farge;
-  String fargekode;
+  String? farge;
+  String? fargekode;
 
   Karosseri.fromJsonMap(Map<String, dynamic> map)
       : farge = map["farge"],

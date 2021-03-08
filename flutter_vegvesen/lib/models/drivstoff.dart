@@ -1,8 +1,8 @@
 class Drivstoff {
-  String drivstofftype;
-  String drivstoffkode;
-  double effekt;
-  double maksEffektPerTime;
+  String? drivstofftype;
+  String? drivstoffkode;
+  double? effekt;
+  double? maksEffektPerTime;
 
   Drivstoff.fromJsonMap(Map<String, dynamic> map)
       : drivstofftype = map["drivstofftype"],

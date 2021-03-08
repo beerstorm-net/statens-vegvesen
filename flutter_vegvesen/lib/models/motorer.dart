@@ -1,9 +1,9 @@
 import 'drivstoff.dart';
 
 class Motorer {
-  Object slagvolum;
+  Object? slagvolum;
   List<Drivstoff> drivstoff;
-  Object partikkelfiltermotor;
+  Object? partikkelfiltermotor;
 
   Motorer.fromJsonMap(Map<String, dynamic> map)
       : slagvolum = map["slagvolum"],

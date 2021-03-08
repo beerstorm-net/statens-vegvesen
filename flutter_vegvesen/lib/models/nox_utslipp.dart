@@ -1,6 +1,6 @@
 class NoxUtslipp {
-  Object prKWh;
-  Object prKm;
+  Object? prKWh;
+  Object? prKm;
 
   NoxUtslipp.fromJsonMap(Map<String, dynamic> map)
       : prKWh = map["prKWh"],

@@ -1,6 +1,6 @@
 class PeriodiskKjoretoykontroll {
-  Object sistKontrollert;
-  String nesteKontroll;
+  Object? sistKontrollert;
+  String? nesteKontroll;
 
   PeriodiskKjoretoykontroll.fromJsonMap(Map<String, dynamic> map)
       : sistKontrollert = map["sistKontrollert"],
