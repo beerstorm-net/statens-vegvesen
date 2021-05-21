@@ -1,3 +1,7 @@
+## [1.1.1] 
+* upgrade dependencies
+
+
 ## [1.1.0] - Null Safety
 
 * Null Safety
